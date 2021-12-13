@@ -1,0 +1,27 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "API Services",
+        "description": "Choose your API in the top right corner.",
+        "version": "1.0.0"
+    },
+    "paths": {
+        "/api/config": {
+            "get": {
+                "tags": [
+                    "Swagger"
+                ],
+                "summary": "All Swagger documents",
+                "operationId": "ec66bc66cdf8245c8e5a30400d4d5581",
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        }
+    },
+    "security": [
+        []
+    ]
+}

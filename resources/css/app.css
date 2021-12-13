@@ -1,0 +1,45 @@
+body {
+    background-color: #f8fafc;
+    color: #212529 !important;
+    font-family: Nunito, sans-serif !important;
+    font-size: .9rem !important;
+    font-weight: 400 !important;
+    line-height: 1.6 !important;
+    margin: 0;
+    text-align: left;
+}
+
+.sweet-card-shadow {
+    box-shadow: rgba(0, 0, 0, 0.1) 2px 2px 10px 0px !important;
+}
+
+.give-me-shadow {
+    box-shadow: rgba(0, 0, 0, 0.1) 2px 2px 10px 0px !important;
+}
+
+.border-primary {
+    border-color: #007bff !important;
+}
+
+.text-white {
+    color: #fff!important;
+}
+
+.center-img {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.compImg {
+    max-width: 100%;
+    height: auto;
+}
+
+.site_footer {
+    color: #666666;
+    font-size: 0.78571428571429rem;
+    text-align: center;
+    text-shadow: 0 1px 0 #fff;
+    width: 100%;
+    margin: 0 auto;
+}
