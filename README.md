@@ -1,7 +1,7 @@
 ## Swagger-UI
 
-A centralized Swagger instance for your many microservices.  Built with PHP/Laravel and a small CRUD interface built in Vue - Bootstrap-Vue.  Add your links
-in the interface, the Swagger Document page will present each url in a drop down menu on the document.
+A centralized Swagger instance for your many microservices.  Built with PHP/Laravel with a small CRUD interface built in Vue & Bootstrap-Vue components.  Add your links
+in the interface, the Swagger Document page will present each url in a drop down menu on the document.  Implements service-repository-pattern in Laravel.
 
 ![Screen Shot](public/images/sc-ss-2.png)
 

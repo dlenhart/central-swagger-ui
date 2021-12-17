@@ -5,16 +5,17 @@ namespace App\Repository;
 use App\Models\SwaggerConfig;
 use Illuminate\Support\Facades\Auth;
 use App\Repository\Interfaces\SwaggerAdminInterface;
+use Illuminate\Database\Eloquent\Builder;
 
 
 class SwaggerAdminRepository implements SwaggerAdminInterface
 {
-    public function getResources()
+    public function getResources(): Builder
     {
         return SwaggerConfig::orderBy('name', 'ASC');
     }
 
-    public function storeResource($resource)
+    public function storeResource($resource): SwaggerConfig
     {
         return SwaggerConfig::create([
             'url'       =>  $resource->url,
@@ -24,7 +25,7 @@ class SwaggerAdminRepository implements SwaggerAdminInterface
         ]);
     }
 
-    public function updateResource($resource)
+    public function updateResource($resource): bool
     {
         return SwaggerConfig::findOrFail($resource->id)
             ->update([
@@ -35,7 +36,7 @@ class SwaggerAdminRepository implements SwaggerAdminInterface
             ]);
     }
 
-    public function deleteResource($id)
+    public function deleteResource($id): bool
     {
         return SwaggerConfig::findOrFail($id)->delete();
     }
