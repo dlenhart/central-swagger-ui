@@ -1,6 +1,6 @@
 ## Swagger-UI
 
-A centralized Swagger instance for your many microservices.  Built with PHP/Laravel with a small CRUD interface built in Vue & Bootstrap-Vue components.  Add your links
+A centralized Swagger instance for your many microservices.  Built with **PHP/Laravel** with a small CRUD interface built in Vue & Bootstrap-Vue components.  Add your links
 in the interface, the Swagger Document page will present each url in a drop down menu on the document.  Implements service-repository-pattern in Laravel.
 
 ![Screen Shot](public/images/sc-ss-2.png)
@@ -10,12 +10,13 @@ in the interface, the Swagger Document page will present each url in a drop down
 How to run:
 
 Copy .env.example to .env
+**Don't forget to add your database info here**
 
 Run Composer:
 
 ``composer install``
 
-Run migrations & seed ( Don't forget to set up a database ):
+Run migrations & seed:
 
 ``php artisan migrate:refresh --seed``
 
